@@ -1,0 +1,27 @@
+# YOLO26m-seg on NWPU VHR-10. optimizer: auto resolves to MuSGD (see README, 'Optimizer note').
+# Exactly the keyword arguments of the original training script (Ultralytics 8.4.33).
+# Everything not listed keeps its Ultralytics default. The runs' resolved arguments are in
+# results/<dataset>/<run>/args.yaml; among them seed: 0, deterministic: true,
+# mosaic: 1.0, close_mosaic: 10, amp: true, cos_lr: false.
+model: yolo26m-seg.pt
+name: yolo26m_nwpu
+data: yolo_dataset/nwpu.yaml          # relative to --root
+project: work_dirs/paper/yolo26       # relative to --root
+train:
+  epochs: 100
+  imgsz: 800
+  batch: 4
+  workers: 0
+  device: 0
+  optimizer: auto
+  lr0: 0.01
+  lrf: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3
+  patience: 20
+  save: true
+  save_period: 10
+  val: true
+  plots: true
+  verbose: true

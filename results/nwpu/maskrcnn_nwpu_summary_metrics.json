@@ -1,0 +1,10 @@
+{
+  "mask_mAP50": 92.82,
+  "mask_mAP50_95": 66.19,
+  "box_mAP50": 93.43,
+  "box_mAP50_95": 72.23,
+  "predictions_file": "<root>\\work_dirs\\maskrcnn_nwpu_evaluation\\results\\predictions.json",
+  "val_annotations_file": "<root>\\work_dirs\\maskrcnn_nwpu_evaluation\\results\\val_anns.json",
+  "model_path": "<root>\\work_dirs\\maskrcnn_nwpu\\best_model.pth",
+  "split": "val"
+}

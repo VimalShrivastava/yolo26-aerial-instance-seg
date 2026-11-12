@@ -1,0 +1,12 @@
+# Mask R-CNN ResNet-50-FPN (torchvision, COCO-pretrained MaskRCNN_ResNet50_FPN_Weights.DEFAULT) on iSAID.
+# Values exactly as in the original training script. The saved optimizer state of the epoch-12 checkpoint
+# confirms them: initial lr 0.005, momentum 0.9, weight decay 5e-4.
+# The reported model (best_model.pth) is the epoch-12 weights (lowest training loss = last epoch).
+num_classes: 16          # 15 iSAID classes + background
+epochs: 12
+batch_size: 4
+lr: 0.005
+momentum: 0.9
+weight_decay: 0.0005
+lr_milestones: [8, 11]   # LR x0.1 after epochs 8 and 11 (MultiStepLR, stepped once per epoch)
+lr_gamma: 0.1

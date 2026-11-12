@@ -1,0 +1,11 @@
+{
+  "mask_mAP50": 95.07,
+  "mask_mAP50_95": 70.68,
+  "box_mAP50": 95.11,
+  "box_mAP50_95": 79.34,
+  "model_path": "<root>\\work_dirs\\paper\\yolo26\\yolo26m_nwpu\\weights\\best.pt",
+  "model_sha256": "badf3380aa8e07c314e59e91009ed5845b4590cac26fa0d9a70c6f420d6dafff",
+  "data_yaml": "<root>\\yolo_dataset\\nwpu.yaml",
+  "split": "val",
+  "ultralytics_output_dir": "<root>\\work_dirs\\paper\\yolo26\\yolo26m_nwpu_evaluation\\results"
+}

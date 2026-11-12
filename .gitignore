@@ -1,0 +1,10 @@
+# datasets and large artefacts are not versioned
+data/
+datasets/
+runs/
+*.pt
+*.pth
+*.zip
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

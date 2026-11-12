@@ -1,0 +1,11 @@
+# Mask R-CNN ResNet-50-FPN (torchvision, COCO-pretrained) on NWPU VHR-10 (80:20 split, seed 42).
+# Values exactly as in the original training script (batch size 2, weight decay 1e-4).
+num_classes: 11          # 10 classes + background
+epochs: 12
+batch_size: 2
+lr: 0.005
+momentum: 0.9
+weight_decay: 0.0001
+seed: 42                 # used only for the train/val split (random.seed + shuffle); training itself is not seeded
+lr_milestones: [8, 11]   # LR x0.1 after epochs 8 and 11
+lr_gamma: 0.1

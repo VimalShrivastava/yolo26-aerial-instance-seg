@@ -1,0 +1,20 @@
+# Environment used for every reported experiment: conda env "mask_rcnn", Windows 11, Python 3.9.23,
+# CUDA 11.8, NVIDIA GeForce RTX 3090 (24 GB). Versions below are from `pip freeze` of that environment.
+# Install the CUDA 11.8 builds of PyTorch first:
+#   pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cu118
+torch==2.1.0
+torchvision==0.16.0
+ultralytics==8.4.33
+ultralytics-thop==2.0.18
+pycocotools==2.0.11
+numpy==1.26.4
+opencv-python==4.13.0.92
+pillow==11.3.0
+pandas==2.2.2
+openpyxl==3.1.5
+PyYAML==6.0.3
+scipy==1.13.1
+
+# Only needed for the Mask R-CNN GFLOPs stage of scripts/benchmark_efficiency.py (`--stage flops`).
+# It is not installed in the training environment any more and the version used originally was not recorded.
+fvcore

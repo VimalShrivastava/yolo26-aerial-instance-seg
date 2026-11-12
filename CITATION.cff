@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "YOLO26 for Instance Segmentation in Remotely Sensed Images: code and data splits"
+authors:
+  - family-names: Srivastava
+    given-names: Vandita
+    orcid: "https://orcid.org/0000-0001-6682-6831"
+  - family-names: Shrivastava
+    given-names: Vimal K.
+    orcid: "https://orcid.org/0000-0003-0647-4541"
+  - family-names: Bera
+    given-names: Somenath
+    orcid: "https://orcid.org/0000-0002-7608-6184"
+preferred-citation:
+  type: article
+  title: "A Comprehensive Evaluation of YOLO26 for Instance Segmentation in Remotely Sensed Images"
+  authors:
+    - family-names: Srivastava
+      given-names: Vandita
+    - family-names: Shrivastava
+      given-names: Vimal K.
+    - family-names: Bera
+      given-names: Somenath
+  journal: "Pattern Analysis and Applications"
+  year: 2026
+  notes: "Under review"

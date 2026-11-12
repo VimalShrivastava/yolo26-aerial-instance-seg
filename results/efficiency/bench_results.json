@@ -1,0 +1,13 @@
+{
+ "_conditions": "RTX 3090, 800x800, batch 1, FP32, CUDA-synced per image, torch 2.1.0+cu118, ultralytics 8.4.33. Latencies are from minimum-contention sessions (see _warning): iSAID full 5541-image val (2026-07-14), NWPU full 130-image val (2026-07-15). YOLO11m includes NMS; YOLO26m is end-to-end (NMS-free); Mask R-CNN forward includes its internal transform+RPN+RoI+postprocess. YOLO params/GFLOPs are for the fused (deploy) model.",
+ "_warning": "This is a shared desktop: concurrent apps (browser etc.) delay CUDA kernel launches and inflate measured latency up to ~1.7x at only 30-40% GPU util (verified 2026-07-15). Re-measure only on a quiet machine; sanity-check that YOLO11m iSAID and NWPU latencies agree (~13 ms) since the architecture and input size are identical.",
+ "isaid_MaskRCNN_stats": {"params_M": 44.0, "ckpt_params_M": 44.1, "MACs_G": 134.0, "GFLOPs_800": 268.0},
+ "isaid_YOLO11m_stats": {"params_M": 22.37, "ckpt_params_M": 22.37, "params_fused_M": 22.35, "GFLOPs_800": 177.5, "GFLOPs_800_fused": 176.5, "GFLOPs_640": 113.6},
+ "isaid_YOLO26m_stats": {"params_M": 27.0, "ckpt_params_M": 27.0, "params_fused_M": 23.52, "GFLOPs_800": 206.2, "GFLOPs_800_fused": 189.4, "GFLOPs_640": 132.0},
+ "isaid_MaskRCNN_latency": {"n_images": 5511, "mean_ms": 41.83, "median_ms": 35.01, "std_ms": 18.32, "p90_ms": 68.3, "fps": 23.9},
+ "isaid_YOLO11m_latency": {"n_images": 5511, "mean_ms": 12.99, "median_ms": 12.83, "std_ms": 0.75, "p90_ms": 13.38, "fps": 77.0},
+ "isaid_YOLO26m_latency": {"n_images": 5511, "mean_ms": 14.26, "median_ms": 13.43, "std_ms": 1.56, "p90_ms": 17.06, "fps": 70.1},
+ "nwpu_YOLO11m_latency": {"n_images": 130, "mean_ms": 12.48, "median_ms": 12.41, "std_ms": 0.29, "p90_ms": 12.87, "fps": 80.2},
+ "nwpu_YOLO26m_latency": {"n_images": 130, "mean_ms": 12.98, "median_ms": 12.87, "std_ms": 0.38, "p90_ms": 13.36, "fps": 77.1},
+ "nwpu_MaskRCNN_latency": {"n_images": 130, "mean_ms": 33.78, "median_ms": 27.17, "std_ms": 17.55, "p90_ms": 67.07, "fps": 29.6}
+}
